@@ -3,11 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Revou Mini Project</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>tes</h1>
+    <header class="header">
+        <img src="assets/revou-logo.png" alt="revou Logo" class="logo">
+        <h1 class="tagline">Mini Project Assignments</h1>
+    </header>
+    
+    <section class="introduce">
+            <h1>Welcome to Katik</h1>
+            <p>Katik adalah website untuk kalian menghitung Luas dan Keliling Segitiga</p>
+            <img src="assets/segitiga.jpg" alt="">
+    </section>
+
+    <section class="kalkulator">
+        <div class="luas">
+            <h2>Menghitung Luas</h2>
+            <p>Masukan Alas Segitiga (AB)</p>
+            <input type="number" id="alas">
+            <p>Masukan Tinggi Segitiga (CD)</p>
+            <input type="number" id="tinggi">
+            <p>Luas segitiga adalah</p>
+            <input type="number" id="outputLuas" readonly>
+            <div class="left-btn">
+                <input class="btn" type="button" value="hitung" onclick="hitungLuas()">
+                <input class="btn" type="button" value="reset" onclick="resetLuas()">
+            </div>
+        </div>
+        <div class="keliling">
+            <h2>Menghitung Keliling</h2>
+            <p>Masukan Sisi a</p>
+            <input type="number" id="sisi1">
+            <p>Masukan Sisi b</p>
+            <input type="number" id="sisi2">
+            <p>Masukan Sisi c</p>
+            <input type="number" id="sisi3">
+            <p>Keliling segitiga adalah</p>
+            <input type="number" id="outputKeliling" readonly>
+            <div class="right-btn">
+                <input class="btn" type="button" value="hitung" onclick="hitungKeliling()">
+                <input class="btn" type="button" value="reset" onclick="resetKeliling()">
+            </div>
+        </div>
+    </section>
 
     <script src="js/script.js"></script>
 </body>
