@@ -16,36 +16,46 @@
     <section class="introduce">
             <h1>Welcome to Katik</h1>
             <p>Katik adalah website untuk kalian menghitung Luas dan Keliling Segitiga</p>
-            <img src="assets/segitiga.jpg" alt="">
+            <!-- <img src="assets/segitiga.jpg" alt=""> -->
     </section>
 
     <section class="kalkulator">
-        <div class="luas">
-            <h2>Menghitung Luas</h2>
-            <p>Masukan Alas Segitiga (AB)</p>
-            <input type="number" id="alas">
-            <p>Masukan Tinggi Segitiga (CD)</p>
-            <input type="number" id="tinggi">
-            <p>Luas segitiga adalah</p>
-            <input type="number" id="outputLuas" readonly>
-            <div class="left-btn">
-                <input class="btn" type="button" value="hitung" onclick="hitungLuas()">
-                <input class="btn" type="button" value="reset" onclick="resetLuas()">
+        <div class="luas-page">
+            <div>
+                <img src="assets/Luas.png" alt="">
+            </div>
+            <div class="luas">
+                <h2>Menghitung Luas</h2>
+                <p>Masukan Alas Segitiga (BC)</p>
+                <input type="number" id="alas">
+                <p>Masukan Tinggi Segitiga (OA)</p>
+                <input type="number" id="tinggi">
+                <p>Luas segitiga adalah</p>
+                <input type="number" id="outputLuas" readonly>
+                <div class="left-btn">
+                    <input class="btn btn-hitung" type="button" value="hitung" onclick="hitungLuas()">
+                    <input class="btn btn-reset" type="button" value="reset" onclick="resetLuas()">
+                </div>
             </div>
         </div>
-        <div class="keliling">
-            <h2>Menghitung Keliling</h2>
-            <p>Masukan Sisi a</p>
-            <input type="number" id="sisi1">
-            <p>Masukan Sisi b</p>
-            <input type="number" id="sisi2">
-            <p>Masukan Sisi c</p>
-            <input type="number" id="sisi3">
-            <p>Keliling segitiga adalah</p>
-            <input type="number" id="outputKeliling" readonly>
-            <div class="right-btn">
-                <input class="btn" type="button" value="hitung" onclick="hitungKeliling()">
-                <input class="btn" type="button" value="reset" onclick="resetKeliling()">
+        <div class="keliling-page">
+            <div>
+                <img src="assets/Keliling.png" alt="">
+            </div>
+            <div class="keliling">
+                <h2>Menghitung Keliling</h2>
+                <p>Masukan Sisi (AB)</p>
+                <input type="number" id="sisi1">
+                <p>Masukan Sisi (BC)</p>
+                <input type="number" id="sisi2">
+                <p>Masukan Sisi (CA)</p>
+                <input type="number" id="sisi3">
+                <p>Keliling segitiga adalah</p>
+                <input type="number" id="outputKeliling" readonly>
+                <div class="right-btn">
+                    <input class="btn btn-hitung" type="button" value="hitung" onclick="hitungKeliling()">
+                    <input class="btn btn-reset" type="button" value="reset" onclick="resetKeliling()">
+                </div>
             </div>
         </div>
     </section>

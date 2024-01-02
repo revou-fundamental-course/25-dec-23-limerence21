@@ -32,15 +32,72 @@ body {
     margin-bottom: 24px;
 }
 
+.introduce img {
+    border: 3px solid black;
+    margin-top: 12px;
+}
 
+/* input {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+} */
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+#outputLuas, #outputKeliling {
+    border-bottom: 3px solid green;
+}
 .kalkulator {
     display: flex;
     justify-content: center;
-    column-gap: 128px;
+    column-gap: 72px;
+}
+
+.kalkulator img {
+    width: 300px;
+    height: auto;
+    border: 2px solid black;
+    margin-bottom: 12px;
 }
 
 .kalkulator p {
     font-size: 18px;
+}
+
+.kalkulator h2 {
+    margin-bottom: 8px;
+}
+
+.luas-page {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.luas {
+    border: 3px solid black;
+    padding: 1em;
+    background-color: white;
+}
+
+.keliling-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.keliling {
+    border: 3px solid black;
+    padding: 1em;
+    background-color: white;
 }
 
 .btn {
@@ -48,6 +105,47 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     padding: 4px 8px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.btn-hitung {
+    background-color: rgb(147, 200, 253);
+    border: 2px solid black;
+    margin-right: 12px;
+}
+
+.btn-reset {
+    background-color: rgb(232, 84, 113);
+    border: 2px solid black;
+}
+
+/* @media only screen and (width > 672) {
+    .header {
+        margin-top: 12px;
+        padding: 12px;
+    }
+} */
+
+@media only screen and (width <= 672px){
+    body {
+        padding: 0 32px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .introduce {
+        text-align: center;
+    }
+    .kalkulator {
+        flex-direction: column;
+    }
+
+    .luas-page {
+        margin-bottom: 25px;
+    }
 }
 
 
