@@ -5,7 +5,13 @@
 }
 
 body {
+<<<<<<< HEAD
   background-image: url(/25-dec-23-limerence21/assets/background.jpg);
+=======
+/*   background-image: url(/assets/background.jpg); */
+  background-image: url(./assets./background.JPG);
+  background-color: aliceblue;
+>>>>>>> 95bd2cb1d45e0ebbedf0f639352f3f658e691c54
 }
 
 .header {
