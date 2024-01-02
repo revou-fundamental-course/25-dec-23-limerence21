@@ -37,11 +37,12 @@ body {
     margin-top: 12px;
 }
 
-/* input {
-    border: none;
-    outline: none;
-    border-bottom: 2px solid black;
-} */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 input[type="number"] {
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
@@ -52,8 +53,11 @@ input[type="number"] {
     border-bottom: 1px solid black;
 }
 
+
 #outputLuas, #outputKeliling {
     border-bottom: 3px solid green;
+    font-size: 16px;
+    font-weight: 500;
 }
 .kalkulator {
     display: flex;
@@ -120,13 +124,6 @@ input[type="number"] {
     border: 2px solid black;
 }
 
-/* @media only screen and (width > 672) {
-    .header {
-        margin-top: 12px;
-        padding: 12px;
-    }
-} */
-
 @media only screen and (width <= 672px){
     body {
         padding: 0 32px;
@@ -145,6 +142,10 @@ input[type="number"] {
 
     .luas-page {
         margin-bottom: 25px;
+    }
+
+    .keliling-page {
+        margin-bottom: 128px;
     }
 }
 
