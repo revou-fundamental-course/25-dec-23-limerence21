@@ -1,42 +1,41 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-image: url(/assets/background.jpg);
+  background-image: url(/assets/background.jpg);
 }
 
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 12px;
-    padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  padding: 12px;
 }
 
 .header img {
-    width: 50px;
-    height: auto;
-    margin-right: 12px;
+  width: 50px;
+  height: auto;
+  margin-right: 12px;
 }
 
 .introduce {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 24px;
-    margin-top: 24px;
-    flex-direction: column;
-    margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 24px;
+  margin-top: 24px;
+  flex-direction: column;
+  margin-bottom: 24px;
 }
 
 .introduce img {
-    border: 3px solid black;
-    margin-top: 12px;
+  border: 3px solid black;
+  margin-top: 12px;
 }
-
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -44,109 +43,107 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 input[type="number"] {
-    -webkit-appearance: textfield;
-    -moz-appearance: textfield;
-    appearance: textfield;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
 
-    border: none;
-    outline: none;
-    border-bottom: 1px solid black;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
 }
 
-
-#outputLuas, #outputKeliling {
-    border-bottom: 3px solid green;
-    font-size: 16px;
-    font-weight: 500;
+#outputLuas,
+#outputKeliling {
+  border-bottom: 3px solid green;
+  font-size: 16px;
+  font-weight: 500;
 }
 .kalkulator {
-    display: flex;
-    justify-content: center;
-    column-gap: 72px;
+  display: flex;
+  justify-content: center;
+  column-gap: 72px;
 }
 
 .kalkulator img {
-    width: 300px;
-    height: auto;
-    border: 2px solid black;
-    margin-bottom: 12px;
+  width: 300px;
+  height: auto;
+  border: 2px solid black;
+  margin-bottom: 12px;
 }
 
 .kalkulator p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .kalkulator h2 {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .luas-page {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
 .luas {
-    border: 3px solid black;
-    padding: 1em;
-    background-color: white;
+  border: 3px solid black;
+  padding: 1em;
+  background-color: white;
 }
 
 .keliling-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .keliling {
-    border: 3px solid black;
-    padding: 1em;
-    background-color: white;
+  border: 3px solid black;
+  padding: 1em;
+  background-color: white;
 }
 
 .btn {
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 4px 8px;
-    margin-top: 8px;
-    cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  margin-top: 8px;
+  cursor: pointer;
 }
 
 .btn-hitung {
-    background-color: rgb(147, 200, 253);
-    border: 2px solid black;
-    margin-right: 12px;
+  background-color: rgb(147, 200, 253);
+  border: 2px solid black;
+  margin-right: 12px;
 }
 
 .btn-reset {
-    background-color: rgb(232, 84, 113);
-    border: 2px solid black;
+  background-color: rgb(232, 84, 113);
+  border: 2px solid black;
 }
 
-@media only screen and (width <= 672px){
-    body {
-        padding: 0 32px;
-    }
+@media only screen and (device-width <= 672px) {
+  body {
+    padding: 0 32px;
+  }
 
-    .header h1 {
-        font-size: 24px;
-    }
+  .header h1 {
+    font-size: 24px;
+  }
 
-    .introduce {
-        text-align: center;
-    }
-    .kalkulator {
-        flex-direction: column;
-    }
+  .introduce {
+    text-align: center;
+  }
+  .kalkulator {
+    flex-direction: column;
+  }
 
-    .luas-page {
-        margin-bottom: 25px;
-    }
+  .luas-page {
+    margin-bottom: 25px;
+  }
 
-    .keliling-page {
-        margin-bottom: 128px;
-    }
+  .keliling-page {
+    margin-bottom: 128px;
+  }
 }
-
-
